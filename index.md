@@ -319,3 +319,80 @@ ini iterasi ke 1
 2 x 3
 ini iterasi ke 2
 ```
+
+## Week 4
+
+In this week we're going to learn about Nested-if, Pass Statement, Input, and Output
+
+### Nested Conditional
+Nested Conditional or Nested-if = a conditional statement that has another conditional statement inside of it
+Usually used on a complex condition but it is very unrecommended to use because there is a chance it will error
+
+**Nested-if**
+```
+If conditionA :
+  If conditionB :
+    statementB
+  else :
+    statementC
+else :
+  statementA
+```
+
+Examples :
+```
+x = 15
+
+if x >= 10:
+    if x >= 20:
+        print('x is big')
+    else:
+        print('x is medium')
+else:
+    print('x is small')
+    
+OUTPUT : x is medium
+```
+
+2nd Example :
+```
+a=77
+
+if a<50 :
+    if a %2 == 0 :
+      print('Small even')
+    else:
+      print('Small odd')
+else: 
+  if a %2 == 0:
+      print('Big even')
+  else:
+      print('Big odd')
+
+OUTPUT : Big Odd
+```
+
+## Pass Statement
+Pass Statement = a condition where it didn't do anything and it will continue to the next line
+
+** Pass Statement **
+```
+if conditionA:
+  pass
+else :
+  statementA
+```
+
+Example :
+```
+status = True
+
+if status == False:
+  print('Open Ermegency Exit')
+else:
+  pass
+
+Output :
+#no output because the pass statement
+```
+
