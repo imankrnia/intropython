@@ -393,6 +393,19 @@ else:
   pass
 
 Output :
+
 #no output because the pass statement
 ```
 
+## Input()
+Input = used to collect input from user
+
+input(prompt)
+prompt = a string that will be shown if the user input a value
+
+```
+x = input("enter a value")
+x
+
+output : enter a value :
+```
