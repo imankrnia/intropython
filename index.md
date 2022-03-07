@@ -397,7 +397,7 @@ Output :
 #no output because the pass statement
 ```
 
-## Input()
+### Input()
 Input = used to collect input from user
 
 input(prompt)
@@ -409,3 +409,176 @@ x
 
 output : enter a value :
 ```
+
+**Typecasting Input**
+Everything we put using the Input() the system will automatically be string
+Example :
+```
+Animal = input("Animal :")
+type(Animal)
+
+output :
+str
+# EVERYTHING WE INPUT IT WILL BE STRING / STR
+
+```
+
+So we can use typecasting to change the string
+Example :
+
+```
+a = input("Enter a number: ")
+b = input("Enter a decimal number: ")
+a = int(a)
+b = float(b)
+c = a+b
+c
+```
+
+```
+a = int(input("Enter a number: "))
+b = float(input("Enter a decimal number: "))
+c = a+b
+c
+```
+
+### Output
+we use print() to show the output
+output syntax : print(object(s), sep=separator, end=end_type)
+
+ex :
+print("Hello")
+or
+x = "Hello"
+print(x)
+
+**Multiple Output**
+Print() can show multiple outputs
+```
+val1 = 3
+val2 = 5.2
+print('A',val1,'B',val2,'C')
+
+output : A 3 B 5.2 C
+
+```
+or
+```
+val1 = 3
+val2 = 5.2
+print('A'+str(val1)+'B'+(val2)+'C')
+
+output : A 3 B 5.2 C
+```
+
+**Seperator and End_Type**
+
+Sep = Seperator, it will seperate all of the object / string in print()
+Default sep=' '
+if we use sep by default it will give a space
+
+Example :
+```
+print('Iman','Amin','Nami','Nima',sep=' & ')
+
+output : Iman & Amin & Nami & Nima
+```
+
+end = end_type
+Default, end = '\n'
+Making a new line
+
+Example :
+```
+print('Iman','Amin','Nami','Nima',sep=' & ',end='>>')
+
+output : Iman & Amin & Nami & Nima>>
+```
+
+```
+for i in range(4):
+    print(i, end=' ')
+    
+output : 0 1 2 3
+```
+
+***F-String***
+in Python 3.6 we can use f-string instead of , or string concatenation
+
+Examples :
+```
+name = "Budi"
+print(f"ini {name}, ini bapak {name}, ini ibu {name}, ini adik {name}.")
+
+output : ini Budi, ini bapak Budi, ini ibu Budi, ini adik Budi.
+```
+```
+nama = 'Adi'
+nilai = 90
+pelajaran = 'Bahasa Inggris'
+print(f"Halo {nama}! Selamat anda telah lulus tes {pelajaran} dengan nilai {nilai}")
+
+output : Halo Adi! Selamat anda telah lulus tes Bahasa Inggris dengan nilai 90
+```
+
+***Print with %***
+we can either use print with % with/without data type
+Data Types with % :
+```
+%d - integer
+%f - float
+%s - string
+%x - hexadecimal
+%o - octa
+```
+
+example without using data type
+```
+hewan = 'sapi'
+kaki = 4
+print("Hewan %s memiliki %d kaki" %(hewan,kaki))
+
+output : Hewan sapi memiliki 4 kaki
+```
+
+example using data type
+```
+barang = 'telur'
+berat = 2.625
+harga = 40000
+print("Harga % .1f kg %s adalah %d" %(berat,barang,harga))
+
+output : Harga  2.6 kg telur adalah 40000
+```
+
+***Print using .format()***
+print with format() example :
+```
+print('Halo! nama saya {}, umur saya {} tahun'.format('Budi',20))
+
+output : Halo! nama saya Budi, umur saya 20 tahun
+```
+
+positional key arguments format
+example :
+```
+print('Teman saya, {0} bermain dengan {1}.'.format('Budi','Tono'))
+print('Teman saya, {1} bermain dengan {0}.'.format('Budi','Tono'))
+
+output :
+Teman saya, Budi bermain dengan Tono.
+Teman saya, Tono bermain dengan Budi.
+
+```
+
+keyword name format
+example :
+```
+print('Bapak membeli {1} dan {0} sebanyak {2:.1f}L dan {vol:.2f}L dengan harga Rp.{price}'.format('bensin', 'oli', 1.542, vol=2.4752, price=50000))
+
+output : Bapak membeli oli dan bensin sebanyak 1.5L dan 2.48L dengan harga Rp.50000
+```
+
+
+
+
