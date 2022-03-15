@@ -579,6 +579,12 @@ print('Bapak membeli {1} dan {0} sebanyak {2:.1f}L dan {vol:.2f}L dengan harga R
 output : Bapak membeli oli dan bensin sebanyak 1.5L dan 2.48L dengan harga Rp.50000
 ```
 
+## Week 5
+
+Today we are going to learn about Decompisition, Abstraction, Function, Docstring, and Lambda.
+
+### Decomposition & Abstraction
+
 
 
 
