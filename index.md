@@ -581,9 +581,17 @@ output : Bapak membeli oli dan bensin sebanyak 1.5L dan 2.48L dengan harga Rp.50
 
 ## Week 5
 
-Today we are going to learn about Decompisition, Abstraction, Function, Docstring, and Lambda.
+Today we are going to learn about Function, Docstring, and Lambda.
 
-### Decomposition & Abstraction
+### Function
+
+Function basic component
+```
+def function_name(parameter/argument):
+  statement
+```
+
+use 'def' for to make a function definition
 
 
 
